@@ -1,0 +1,390 @@
+<html>
+
+<head>
+    <title>HTML TABLE</title>
+</head>
+
+<body>
+    <h2>HTML TABLES </h2>
+    The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns
+    of cells.
+    The HTML tables are created using the &lt;table> tag in which the &lt;tr> tag is used to create table rows and
+    &lt;td>
+    tag is used to create data cells. <br>
+    <h3>Example:</h3>
+
+    &lt;html><br>
+
+    &lt;head><br>
+    &lt;title>HTML Tables&lt;title><br>
+    &lt;/head><br>
+
+    &lt;body><br>
+    &lt;table border="1"><br>
+    &lt;tr><br>
+    &lt;td>Row 1, Column 1&lt;td><br>
+    &lt;td>Row 1, Column 2&lt;/td><br>
+    &lt;tr><br>
+    &lt;tr><br>
+    &lt;td>Row 2, Column 1&lt;td><br>
+    &lt;td>Row 2, Column 2&lt;/td><br>
+    &lt;tr><br>
+    &lt;table><br>
+    &lt;body><br>
+
+    &lt;html>
+    <br>
+    <br>
+    <b>This will produce following result:</b>
+    <br> <br>
+
+    <table border="1">
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+    <br>
+    Here <b>border</b> is an attribute
+    of &lt;table> tag and it is used to put a border across all the cells. If you do not need a border
+    then you can use border="0".
+
+
+    <h2>Table Heading</h2>
+    Table heading can be defined using <b>&lt;th></b> tag.
+    This tag will be put to replace
+    &lt;td> tag, which is used to represent actual data cell.
+    Normally you will put your top row as table heading as shown below, otherwise you can use
+    &lt;th> element in any row.
+
+    <h3>Example</h3>
+    <br>
+    &lt;html> <br>
+    &lt;head> <br>
+    &lt;title>HTML Table Header <br>
+
+    &lt;title><br>
+    &lt;head><br>
+
+    &lt;body><br>
+    &lt;table border="1"> <br>
+    &lt;tr><br>
+    &lt;th>Name&lt;/th><br>
+    &lt;th>Salary&lt;/th><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Akash Kumar&lt;/td><br>
+    &lt;td>5000&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Rahul Singh&lt;/td><br>
+    &lt;td>7000&lt;/td><br>
+    &lt;/tr><br>
+    &lt;/table><br>
+    &lt;/body><br>
+
+    &lt;/html> <br> <br> <b>This will produce following result:</b>
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Akash Kumar</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>Rahul Singh</td>
+            <td>7000</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <h2>Cellpadding and Cellspacing Attributes</h2>
+    There are two attribiutes called cellpadding and cellspacing which you will use to adjust the white
+    space in your table cells. The cellspacing attribute defines the width of the border, while cellpadding
+    represents the distance between cell borders and the content within a cell.
+
+    <h3>Example:</h3>
+    <br>
+    &lt;html><br>
+
+    &lt;head><br>
+    &lt;title>HTML Table Cellpadding&lt;/title><br>
+    &lt;/head><br>
+
+    &lt;body><br>
+    &lt;table border="1" cellpadding="5" cellspacing="5"><br>
+    &lt;tr><br>
+    &lt;th>Name &lt;/th><br>
+    &lt;th>Salary&lt;/th><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Akash Kumar&lt;/td><br>
+    &lt;td>5000&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Rahul Singh&lt;/td><br>
+    &lt;td>7000&lt;/td><br>
+    &lt;/tr><br>
+    &lt;/table> <br>
+    &lt;/body> <br>
+
+    &lt;/html> <br><br><b> This will produce following result:</b> <br>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>Name
+
+            </th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Akash Kumar</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>Rahul Singh</td>
+            <td>7000</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <h2>Colspan and Rowspan Attributes </h2>
+    You will use colspan attribute if you want to merge two or more columns into a single column.
+    Similar way you will use rowspan if you want to merge two or more rows.
+
+    <h3>Example:</h3>
+
+    &lt;html><br>
+    &lt;head><br>
+    &lt;title>HTML Table Colspan/Rowspan&lt;/title><br>
+    &lt;/head><br>
+
+    &lt;body><br>
+    &lt;table border="1"><br>
+    &lt;tr><br>
+    &lt;th>Column 1&lt;/th><br>
+    &lt;th>Column 2&lt;/th><br>
+    &lt;th>Column 3&lt;th><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td rowspan="2">Row 1 Cell 1&lt;/td><br>
+    &lt;td>Row 1 Cell 2&lt;/td><br>
+    &lt;td>Row 1 Cell 3&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Row 2 Cell 2&lt;/td><br>
+    &lt;td>Row 2 Cell 3&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td colspan="3">Row 3 Cell 1&lt;/td><br>
+    &lt;/tr><br>
+    &lt;table><br>
+    &lt;body><br>
+
+    &lt;/html> <br> <br>
+
+    <b>This will produce following result: </b> <br> <br>
+    <table border="1">
+        <tr>
+            <th>Column 1</th>
+            <th>Column
+                2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3
+
+            </td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Tables Backgrounds </h2>
+
+    You can set table background using one of the following two ways: <br>
+    <b>bgcolor</b> attribute - You can set background color for whole
+    table or just for one cell. <br>
+    <b>background</b> attribute - You can set background image for whole table or just for one cell. You can also set
+    border color also using bordercolor attribute.
+    <br>
+    <h3>Example</h3><br>
+
+    &lt;html><br>
+    &lt;head><br>
+    &lt;title>HTML
+    Table Background&lt;/title><br>
+    &lt;/head><br>
+
+    &lt;body><br>
+    &lt;table border="1" bordercolor="green" bgcolor="yellow"><br>
+    &lt;tr><br>
+    &lt;th>Column 1&lt;/th><br>
+    &lt;th>Column 2&lt;/th><br>
+    &lt;th>Column 3&lt;/th><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td rowspan="2">Row 1 Cell 1&lt;/td><br>
+    &lt;td>Row 1 Cell 2&lt;/td><br>
+    &lt;td>Row 1 Cell 3&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Row 2 Cell 2&lt;/td><br>
+    &lt;td>Row 2 Cell 3&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td colspan="3">Row 3 Cell 1&lt;/td><br>
+    &lt;/tr><br>
+    &lt;/table><br>
+    &lt;/body><br>
+
+    &lt;/html> <br>
+
+    <br><br>
+    <b>This will produce following result: </b>
+    <br>
+
+    <table border="1" bordercolor="green" bgcolor="yellow">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <h2>Table Height and Width</h2><br>
+
+    You can set a table width and height using width and height attrubutes.
+    You can specify table width or height in terms of pixels or in terms of percentage of available screen area. <br>
+
+    <h3>Example:</h3>
+    <br>
+
+    &lt;html><br>
+
+    &lt;head><br>
+    &lt;title>HTML Table Width/Height&lt;/title><br>
+    &lt;/head><br>
+
+    &lt;body><br>
+    &lt;table border="1" width="400" height="150"><br>
+    &lt;tr><br>
+    &lt;td>Row 1, Column 1&lt;/td><br>
+    &lt;td>Row 1, Column 2&lt;/td><br>
+    &lt;/tr><br>
+    &lt;tr><br>
+    &lt;td>Row 2, Column 1&lt;/td><br>
+    &lt;td>Row 2, Column 2&lt;/td><br>
+    &lt;/tr><br>
+    &lt;/table><br>
+    &lt;/body><br>
+
+    &lt;/html><br>
+
+    <br>
+    <b>This will produce following result: </b>
+    <br>
+    <br>
+    <table border="1" width="400" height="150">
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+
+    <h2>Table Caption</h2>
+
+    The caption tag will serve as a title or explanation for the table and it shows up at the top of the table. <br>
+    
+    <h3>Example:</h3>
+    <br>
+    
+    &lt;html><br>
+
+    &lt;head><br>
+        &lt;title>HTML
+            Table Caption&lt;/title><br>
+    &lt;/head><br>
+
+    &lt;body><br>
+        &lt;table border="1" width="100%"><br>
+            &lt;caption>This is the caption
+
+            &lt;/caption><br>
+            &lt;tr><br>
+                &lt;td>row 1, column 1&lt;/td><br>
+                &lt;td>row 1, columnn 2&lt;/td><br>
+            &lt;/tr><br>
+            &lt;tr><br>
+                &lt;td>row 2, column 1
+
+                &lt;/td><br>
+                &lt;td>row 2, columnn 2&lt;/td><br>
+            &lt;/tr><br>
+        &lt;/table><br>
+    &lt;/body><br>
+
+    &lt;/html><br>
+     
+    
+    <br><br>
+    <b>This will produce following result: </b>
+    <br>
+    <table border="1" width="100%">
+        <caption>This is the caption
+
+        </caption>
+        <tr>
+            <td>row 1, column 1</td>
+            <td>row 1, columnn 2</td>
+        </tr>
+        <tr>
+            <td>row 2, column 1
+
+            </td>
+            <td>row 2, columnn 2</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

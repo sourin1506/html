@@ -1,0 +1,167 @@
+<head>
+<meta charset="utf-8">
+<title>HTML TAGS</title>
+<style>
+
+body {
+  background-color: #faf2e4;
+  margin: 0 15%;
+  font-family: sans-serif;
+  }
+
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #d1633c;
+  font-size: 1em;
+}
+
+</style>
+</head>
+
+<body>
+<h1>HTML Tags</h1>
+
+<h2>Defination</h2>
+<p>HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content.
+
+Most tags must have two parts, an opening and a closing part. For example, <html> is the opening tag and </html> is the closing tag. Note that the closing tag has the same text as the opening tag, but has an additional forward-slash ( / ) character. I tend to interperet this as the "end" or "close" character.
+
+There are some tags that are an exception to this rule, and where a closing tag is not required. The <img> tag for showing images is one example of this.
+
+Each HTML file must have the essential tags for it to be valid, so that web browsers can understand it and display it correctly.
+
+The rest of the HTML file can contain as little or as many tags as you want to display your content.
+</p>
+<hr noshade>
+<h2>Tag Attributes</h2>
+<p>
+Attributes allow you to customise a tag, and are defined within the opening tag, for example:
+&lt;img src="image1.jpg"&gt; or &lt;p align="center"&gt; ... &lt;/p&gt;
+
+Attributes are often assigned a value using the equals sign, such as border="0" or width="50%", but there are some that only need to be declared in the tag like this. <hr>
+Most attributes are optional for most tags, and are only used when you want to change something about the default way a tag is displayed by the browser. However, some tags such as the <img> tag has required attributes such as src and alt which are needed in order for the browser to display the web page properly.
+</p>
+ <hr noshade>
+
+<h2>Tag Types:</h2>
+<p>
+1. Paired Tags<br>
+Paired tags have an opening and closing tag. The opening tag is similar to the single tag &lt;div&gt;, and the closing has first slash &lt;/div&gt, between them, write some content (text, images or something else) and for this, they are called containers.
+Attachment of tags (descriptors, containers) are allowed.
+<br>
+2. Singular Tags<br>
+A tag is set to be a singular tag when there is no closing tag for that or Tag is said to be singular tag when there is no companion tag.
+For example, we have only one tag which doesn’t require any closing tag and it must always be a single tag, that is why it’s called singular tag Singular Tags are also called:<br>
+Unpaired Tags<br>
+Standalone tag<br>
+Tag without companion tag<br>
+Example: &lt;br/&gt , &lt;hr&gt<br>
+
+3. Meta Tags<br>
+Meta Tags are those tags which are used in the &lt;head&gt section of the website, which provides relative data about the web-page to the search engine.
+For example, we use meta keywords for a single page of our website if you right-click on this web page and view source, then you will see in the header section there are meta tags used, which carry Meta title, Meta keywords, and Meta description.
+That keywords and description are used for the search engine to know what the page is about.
+ <hr >
+Division of Tags Based On Their Usage.
+Tags can be differentiated based on the purpose of usage. There are four types:<br>
+
+1. Formatting Tags<br>
+These are HTML tags of words or letters to control font size &lt;font&gt, underline a part of a text &lt;u&gt, making a text bold &lt;b&gt…etc.
+Others such as tables, div, span tags are used for layout and formatting of content.
+<br>
+2. Page Structure tags<br>
+Description, title, head, body etc are part of the page structure tags.
+They are part of the basic HTML page and does not directly affect the formatting of text or image.
+<br>
+3. Control Tags<br>
+Form tags, Script tags, Radio buttons etc are part of the control tags.
+These tags are used to manage content or mange external scripts or libraries (JQuery, Bootstrap)
+<br>
+4. Interactive Tags<br>
+All form tags like input text box, drop-down list, radio buttons etc are used for interaction with a user.
+These tags can be formatted by using style properties.
+<br>
+</p>
+<hr noshade>
+<div class="row">
+
+        <div class="col col-lg-10">
+            <div id="inner-text">
+                
+                    <h2>Basic Elements</h1>
+                    
+                
+                <p>The basic elements of an HTML page are:</p>
+<ul>
+<li>A text header, denoted using the <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> tags.</li>
+<li>A paragraph, denoted using the <code>&lt;p&gt;</code> tag.</li>
+<li>A horizontal ruler, denoted using the <code>&lt;hr&gt;</code> tag.</li>
+<li>A link, denoted using the <code>&lt;a&gt;</code> (anchor) tag.</li>
+<li>A list, denoted using the <code>&lt;ul&gt;</code> (unordered list), <code>&lt;ol&gt;</code> (ordered list) and <code>&lt;li&gt;</code> (list element) tags.</li>
+<li>An image, denoted using the <code>&lt;img&gt;</code> tag</li>
+<li>A divider, denoted using the <code>&lt;div&gt;</code> tag</li>
+<li>A text span, denoted using the <code>&lt;span&gt;</code> tag</li>
+</ul>
+<p>The next few pages will give an overview of these basic HTML elements.</p>
+<p>Each element can also have attributes - each element has a different set of attributes relevant to the element. There
+are a few global elements, the most common of them are:</p>
+<ul>
+<li><code>id</code> - Denotes the unique ID of an element in a page. Used for locating elements by using links, JavaScript, and more.</li>
+<li><code>class</code> - Denotes the CSS class of an element. Explained in the <a href="https://www.learn-html.org/en/CSS_Basics">CSS Basics</a> tutorial.</li>
+<li><code>style</code> - Denotes the CSS styles to apply to an element. Explained in the <a href="https://www.learn-html.org/en/CSS_Basics">CSS Basics</a> tutorial.</li>
+<li><code>data-x</code> attributes - A general prefix for attributes that store raw information for programmatic purposes. 
+Explained in detailed in the <a href="https://www.learn-html.org/en/Data_Attributes">Data Attributes</a> section.</li>
+</ul>
+<hr>
+
+<h3>Text headers and paragraphs</h3>
+<p>There are six different types of text header you can choose from, h1 being the topmost heading with the largest
+text, and h6 being the most inner heading with the smallest text. In general, you should have only one h1 tag
+with a page, since it should be the primary description of the HTML page.</p>
+<p>As we've seen in the last example, a paragraph is a block of text separated from the rest of the text around it.</p>
+<p>Let's see an example of the <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> tags in action:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My First Page&lt;/h1&gt;
+        &lt;p&gt;This is my first page.&lt;/p&gt;
+        &lt;h2&gt;A secondary header.&lt;/h2&gt;
+        &lt;p&gt;Some more text.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<hr>
+<h3>Horizontal rulers</h3>
+<p>A horizontal ruler <code>&lt;hr&gt;</code> tag acts as a simple separator between page sections.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My First Page&lt;/h1&gt;
+        &lt;p&gt;This is my first page.&lt;/p&gt;
+        &lt;hr/&gt;
+        &lt;p&gt;This is the footer - all rights are reserved to me.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+            </div>
+<hr noshade>
+<h2>Example:</h2>
+<img src="Webpage.png" alt="Webpage logo">
+<hr noshade>
+
+
+
+</html>
